@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: kafka_spring
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+server:
+  port: 13465
+
+kafka:
+  topics:
+    primary: topic1
+    secondary: topic2
+  consumer:
+    groups:
+      primary: groupPrimary
+      secondary: groupSecondary
